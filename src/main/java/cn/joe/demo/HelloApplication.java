@@ -2,11 +2,13 @@ package cn.joe.demo;
 
 import java.nio.charset.Charset;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,16 +23,34 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller 
 //表明是springMVC的controller控制器
-@SpringBootApplication(exclude = { RedisAutoConfiguration.class })
+@SpringBootApplication//(exclude = { RedisAutoConfiguration.class })
 //表明是springBoot的应用 主要是用来开启核心配置  开启自动配置
 @Configuration 
 //spring的配置类
 public class HelloApplication {
+	
+	@Autowired
+	RedisTemplate<String, String> redisTemplate;
 
     @RequestMapping("hello")
     @ResponseBody
     public String hello() {
         return "hello world！ JOE！万桥";
+    }
+    
+    
+    @RequestMapping("redis")
+    @ResponseBody
+    public String redis() {
+         redisTemplate.opsForValue().set("wanqiao", "我爱你");
+         return "success";
+    }
+    
+    @RequestMapping("redis/get")
+    @ResponseBody
+    public String redisGetValue() {
+         
+         return redisTemplate.opsForValue().get("msg");
     }
     
     /**
@@ -50,6 +70,8 @@ public class HelloApplication {
         //启动时看到的图标  称之为banner
         //application.setBannerMode(Mode.OFF);
         application.run(args);
+        
+        
     }
 
 }
