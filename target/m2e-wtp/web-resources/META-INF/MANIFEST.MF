@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: springboot
 Implementation-Version: 1.0.0-SNAPSHOT
-Built-By: wanqiao
+Built-By: myijo
 Implementation-Vendor-Id: cn.joe.springboot
-Build-Jdk: 1.8.0_111
+Build-Jdk: 1.8.0_91
 Implementation-URL: http://projects.spring.io/spring-boot/springboot/
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
