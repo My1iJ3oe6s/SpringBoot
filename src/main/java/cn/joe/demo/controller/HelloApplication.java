@@ -21,7 +21,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import cn.joe.demo.service.HttpClientService;
 
 /**
- * Spring boot项目一啊不能都会有一个*Application的入口类，入口类中会有一个main 的方法， 这是一个标准的java应用程序的入库方法
  * 
  * @author wanqiao
  *

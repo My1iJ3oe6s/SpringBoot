@@ -18,6 +18,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class HttpClientConfig {
 
+
+
 	// @Value("${http.maxTotal}")
 	private Integer maxTotal = 5;
 
@@ -44,11 +46,20 @@ public class HttpClientConfig {
 		return httpClientConnectionManager;
 	}
 
+	/**
+	 *
+	 * @Qualifier (合格者) 配合@autowired使用 但注入的是接口时
+	 * 但是接的实现却有两个，Spring会不知道注入的哪一个
+	 * 这个时候使用@Qualifier来进行筛选合格的实现类
+	 *
+	 */
+
 	@Bean(name = "httpClientBuilder")
 	public HttpClientBuilder getHttpClientBuilder(
 			@Qualifier("httpClientConnectionManager") PoolingHttpClientConnectionManager httpClientConnectionManager) {
 
-		HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
+		HttpClientBuilder httpClientBuilder
+				= HttpClientBuilder.create();
 
 		httpClientBuilder.setConnectionManager(httpClientConnectionManager);
 		return httpClientBuilder;

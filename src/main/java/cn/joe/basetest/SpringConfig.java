@@ -1,14 +1,14 @@
 package cn.joe.basetest;
 
-import javax.sql.DataSource;
-
+import com.jolbox.bonecp.BoneCPDataSource;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
-import com.jolbox.bonecp.BoneCPDataSource;
+import javax.sql.DataSource;
 
 @Configuration
 // 通过该注解来表明该类是一个Spring的配置，相当于一个xml文件
@@ -21,6 +21,29 @@ public class SpringConfig {
 	// 通过该注解来表明是一个Bean对象，相当于xml中的<bean>
 	public UserDAO getUserDAO() {
 		return new UserDAO(); // 直接new对象做演示
+	}
+
+	@Bean(name = "user2")
+	// 通过该注解来表明是一个Bean对象，相当于xml中的<bean>
+	public User getUser() {
+		User user = new User();
+		user.setAge(10);
+		user.setUsername("wanqiao");
+		return user; // 直接new对象做演示
+	}
+
+	@Bean(name = "user3")
+	public User getUser1() {
+		User user = new User();
+		user.setAge(50);
+		user.setUsername("joe");
+		return user;
+	}
+
+	@Bean(name = "user1")//User存在多个实例的时候依赖注入需要指定name属性 通过@Qualifier注解来筛选
+	public User get(@Qualifier("user3") User user) {
+		user.setAge(user.getAge() + 20);
+		return user ;
 	}
 
 	@Value("${jdbc.url}")
