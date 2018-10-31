@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f96cac0b-d99b-44cd-a151-6a682734df49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/joe/demo/RedisConnectionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/joe/basetest/Main.class" afterPath="$PROJECT_DIR$/target/classes/cn/joe/basetest/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/joe/basetest/SpringConfig.class" afterPath="$PROJECT_DIR$/target/classes/cn/joe/basetest/SpringConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/joe/basetest/UserDAO.class" afterPath="$PROJECT_DIR$/target/classes/cn/joe/basetest/UserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/joe/basetest/UserService.class" afterPath="$PROJECT_DIR$/target/classes/cn/joe/basetest/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/joe/demo/config/RedisConfig.class" afterPath="$PROJECT_DIR$/target/classes/cn/joe/demo/config/RedisConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/joe/basetest/Main.java" afterPath="$PROJECT_DIR$/src/main/java/cn/joe/basetest/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/joe/basetest/SpringConfig.java" afterPath="$PROJECT_DIR$/src/main/java/cn/joe/basetest/SpringConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/joe/basetest/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/cn/joe/basetest/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/joe/demo/Application.java" afterPath="$PROJECT_DIR$/src/main/java/cn/joe/demo/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/joe/demo/config/MySrpingMVCConfig.java" afterPath="$PROJECT_DIR$/src/main/java/cn/joe/demo/config/MySrpingMVCConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/joe/demo/config/RedisConfig.java" afterPath="$PROJECT_DIR$/src/main/java/cn/joe/demo/config/RedisConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/Redis.properties" afterPath="$PROJECT_DIR$/src/main/resources/config/Redis.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config/Redis.properties" afterPath="$PROJECT_DIR$/target/classes/config/Redis.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,8 +35,8 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/joe/demo/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            <state relative-caret-position="525">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -163,10 +149,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="393" />
-    <option name="y" value="25" />
-    <option name="width" value="1932" />
-    <option name="height" value="1045" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1005,16 +991,24 @@
       <workItem from="1529544742666" duration="626000" />
       <workItem from="1529630633570" duration="959000" />
       <workItem from="1530322901242" duration="128000" />
-      <workItem from="1540973583113" duration="36000" />
+      <workItem from="1540973583113" duration="444000" />
     </task>
+    <task id="LOCAL-00001" summary="Jenkins新版本测试">
+      <created>1540973648966</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540973648966</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106106000" />
+    <option name="totallyTimeSpent" value="106514000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="393" y="25" width="1932" height="1045" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1037,7 +1031,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.03959276" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20032051" sideWeight="0.49333334" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19989339" sideWeight="0.49333334" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1057,6 +1051,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Jenkins新版本测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jenkins新版本测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1413,8 +1411,8 @@
     <entry file="jar://E:/development/maven/maven-repository/org/apache/httpcomponents/httpclient/4.3.1/httpclient-4.3.1.jar!/org/apache/http/impl/client/HttpClientBuilder.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/joe/demo/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        <state relative-caret-position="525">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
