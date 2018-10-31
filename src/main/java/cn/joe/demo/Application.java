@@ -18,10 +18,10 @@ public class Application {
         // 运行spring的应用
         // SpringApplication.run(HelloApplication.class, args);
         SpringApplication application = new SpringApplication(Application.class);
+        System.out.println("#### NEW test #### ");
         // 启动时看到的图标 称之为banner
         // application.setBannerMode(Mode.OFF);
         application.run(args);
-
 
     }
 }

@@ -81,26 +81,26 @@ public class RedisConfig   {
     * @param @param jedisPoolConfig
     * @param @return
     * @return JedisConnectionFactory
-    * @autor lpl
+    * @autor wanqiao
     * @date 2018年2月24日
     * @throws
      */
    @Bean
     public JedisConnectionFactory JedisConnectionFactory(JedisPoolConfig jedisPoolConfig){
-        JedisConnectionFactory JedisConnectionFactory = new JedisConnectionFactory(jedisPoolConfig);
+        JedisConnectionFactory jedisConnectionFactory= new JedisConnectionFactory(jedisPoolConfig);
         //连接池  
-        JedisConnectionFactory.setPoolConfig(jedisPoolConfig);
+        jedisConnectionFactory.setPoolConfig(jedisPoolConfig);
         //IP地址  
-        JedisConnectionFactory.setHostName("192.168.239.128");
+        jedisConnectionFactory.setHostName("192.168.232.128");
         //端口号  
-        JedisConnectionFactory.setPort(6379);
-        //如果Redis设置有密码  
-        //JedisConnectionFactory.setPassword(password);  
+        jedisConnectionFactory.setPort(6379);
+        //如果Redis设置有密码     (在启动的时候存在连接不上的时候,会关闭关闭只能自己访问的ip设置和设置访问的requirepass)
+        jedisConnectionFactory.setPassword("wanqiao");
         //客户端超时时间单位是毫秒  
-        JedisConnectionFactory.setTimeout(5000);
-        return JedisConnectionFactory;
+        jedisConnectionFactory.setTimeout(5000);
+        return jedisConnectionFactory;
     }
-   
+
    /**
     * 实例化 RedisTemplate 对象
     *
@@ -110,6 +110,7 @@ public class RedisConfig   {
    public RedisTemplate<String, Object> functionDomainRedisTemplate(RedisConnectionFactory redisConnectionFactory) {
        RedisTemplate<String, Object> redisTemplate = new RedisTemplate<>();
        initDomainRedisTemplate(redisTemplate, redisConnectionFactory);
+      // System.out.println("GET redis data :" + redisTemplate.opsForValue().get("msg"));
        return redisTemplate;
    }
    
@@ -129,8 +130,5 @@ public class RedisConfig   {
        redisTemplate.setEnableTransactionSupport(true);
        redisTemplate.setConnectionFactory(factory);
    }
-
-
-
 
 }
